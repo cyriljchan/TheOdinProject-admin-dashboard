@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px rgb(141, 141, 141);
+}
+.mini.card {
+    font-size: 10px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.topbar {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
+    position: relative;
+    box-shadow: 0 1px 5px rgb(169, 168, 168);
+    padding: 8px;
+}
+.search {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+}
+.post {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    z-index: 1;
+    padding: 8px;
+    background-color: rgb(188, 121, 63);
+}
+
+.content {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 8px;
+
+    background-color: #e2e0e0;
+    padding: 8px;
+}
+
+.projects {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    /* border: 2px solid green; */
+}
+.projects > .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.announcements {
+    grid-column: 2;
+
+    /* border: 2px solid blue; */
+}
+
+.trending {
+    grid-column: 2;
+
+    /* border: 2px solid red; */
+}
